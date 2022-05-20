@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Porfolio</title>
+    <title>Портфолио</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -25,10 +25,10 @@
           <a href="./index.html" class="logo"><span class="logo-web">Web</span>Studio</a>
           <ul class="site-nav list">
             <li class="item">
-              <a href="./index.html" class="site-nav-list title current">Студия</a>
+              <a href="./index.html" class="site-nav-list title">Студия</a>
             </li>
             <li class="item">
-              <a href="./portfolio.html" class="site-nav-list title">Портфолио</a>
+              <a href="./portfolio.html" class="site-nav-list title current">Портфолио</a>
             </li>
             <li class="item">
               <a href="" class="site-nav-list title">Контакты</a>
@@ -206,27 +206,80 @@
 
     <!-- Подвал -->
     <footer class="footer-back">
-      <div class="container">
-        <a href="./index.html" class="logo"
-          ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
-        >
-        <address>
-          <ul class="footer-address-list list">
-            <li class="item">
-              <a class="contact-footer-list address" href="" lang="ru"
-                >г.Киев пр-т Леси Украинки, 26</a
-              >
+      <div class="footer-flex container">
+        <div class="footer-contacts-container">
+          <a href="./index.html" class="logo"
+            ><span class="logo-web">Web</span><span class="logo-studio">Studio</span></a
+          >
+          <address>
+            <ul class="footer-address-list list">
+              <li class="item">
+                <a
+                  class="contact-footer-list address"
+                  href="https://goo.gl/maps/GCz9mcJcmjAWSKVcA"
+                  target="_blank"
+                  lang="ru"
+                  >г.Киев пр-т Леси Украинки, 26</a
+                >
+              </li>
+              <li class="item">
+                <a class="contact-footer-list email" href="mailto:info@example.com" target="_blank"
+                  >info@example.com</a
+                >
+              </li>
+              <li class="item">
+                <a class="contact-footer-list phone" href="tel:+380991111111" target="_blank"
+                  >+38 099 111 11 11</a
+                >
+              </li>
+            </ul>
+          </address>
+        </div>
+        <div class="footer-social-links">
+          <p class="footer-text">присоединяйтесь</p>
+          <ul class="footer-social-list list">
+            <li class="social-item">
+              <a
+                class="footer-social-link link"
+                href="http://instagram.com"
+                target="_blank"
+                aria-label="instagram"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#instagram-icon"></use></svg
+              ></a>
             </li>
-            <li class="item">
-              <a class="contact-footer-list email" href="mailto:info@example.com"
-                >info@example.com</a
-              >
+            <li class="social-item">
+              <a
+                class="footer-social-link link"
+                href="http://twitter.com"
+                target="_blank"
+                aria-label="instagram"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#twitter-icon"></use></svg
+              ></a>
             </li>
-            <li class="item">
-              <a class="contact-footer-list phone" href="tel:+380991111111">+38 099 111 11 11</a>
+            <li class="social-item">
+              <a
+                class="footer-social-link link"
+                href="http://facebook.com"
+                target="_blank"
+                aria-label="instagram"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#facebook-icon"></use></svg
+              ></a>
+            </li>
+            <li class="social-item">
+              <a
+                class="footer-social-link link"
+                href="http://linkedin.com"
+                target="_blank"
+                aria-label="instagram"
+                ><svg width="20px" height="20px">
+                  <use href="./images/icons.svg#linkedin-icon"></use></svg
+              ></a>
             </li>
           </ul>
-        </address>
+        </div>
       </div>
     </footer>
   </body>

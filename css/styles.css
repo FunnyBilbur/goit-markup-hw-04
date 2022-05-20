@@ -9,6 +9,7 @@
   --header-border-color: #ececec;
   --portfolio-cards-border-color: #eeeeee;
   --default-icon-color: #afb1b8;
+  --footer-icons: #ffffff1a;
 }
 
 /* Настраиваю глобальный тег Body */
@@ -356,6 +357,43 @@ p {
   margin-right: 10px;
 }
 
+/* Section Our Clients */
+.our-clients-title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+
+  text-align: center;
+  margin: 0;
+  margin-bottom: 50px;
+}
+
+.our-clients-list {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.our-clients-list .our-clients-item + .our-clients-item {
+  margin-left: 30px;
+}
+
+.client-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 170px;
+  height: 92px;
+  fill: var(--default-icon-color);
+  border: 1px solid var(--default-icon-color);
+  border-radius: 4px;
+}
+.client-link:focus,
+.client-link:hover {
+  fill: var(--accent-color);
+  border: 1px solid var(--accent-color);
+}
+
 /* Footer */
 .contact-footer-list {
   color: var(--primary-text-color);
@@ -392,6 +430,45 @@ p {
 .email,
 .phone {
   opacity: 0.6;
+}
+
+.footer-flex {
+  display: flex;
+  align-items: baseline;
+}
+
+.footer-social-list {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 10px;
+}
+
+.footer-social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--primary-text-color);
+  background-color: var(--footer-icons);
+  border-radius: 50%;
+}
+
+.footer-social-link:focus,
+.footer-social-link:hover {
+  background-color: var(--accent-color);
+}
+.footer-contacts-container {
+  margin-right: 70px;
+}
+.footer-text {
+  color: var(--primary-text-color);
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  margin-bottom: 20px;
 }
 
 /*  */
