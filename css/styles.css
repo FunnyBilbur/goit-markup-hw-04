@@ -8,6 +8,7 @@
   --our-team-color: #f5f4fa;
   --header-border-color: #ececec;
   --portfolio-cards-border-color: #eeeeee;
+  --default-icon-color: #afb1b8;
 }
 
 /* Настраиваю глобальный тег Body */
@@ -23,7 +24,7 @@ body {
   margin: 0;
   list-style: none;
 }
-/* Для всех линков прятаю прятую нижнее подчеркивание */
+/* Для всех линков(тег а) прятаю нижнее подчеркивание */
 .link {
   text-decoration: none;
 }
@@ -150,7 +151,7 @@ p {
 } */
 
 .main-header .item + .item {
-  margin-left: 50px;
+  margin-left: 30px;
 }
 
 .main-header .contact-header {
@@ -291,6 +292,8 @@ p {
 .our-team-list .title-name {
   padding-top: 30px;
   padding-bottom: 30px;
+  padding-right: 32px;
+  padding-left: 32px;
 }
 .our-team-list .title.name {
   margin-bottom: 10px;
@@ -324,6 +327,33 @@ p {
   line-height: 1.18;
   /* identical to box height */
   text-align: center;
+}
+
+.social-list-link {
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  margin-top: 16px;
+}
+
+.social-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 44px;
+  height: 44px;
+  fill: var(--default-icon-color);
+}
+
+.social-link:hover,
+.social-link:focus {
+  fill: var(--primary-text-color);
+  background-color: var(--accent-color);
+  border-radius: 50%;
+}
+
+.social-item:not(:last-child) {
+  margin-right: 10px;
 }
 
 /* Footer */
