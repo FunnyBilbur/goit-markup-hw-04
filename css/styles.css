@@ -245,19 +245,18 @@ p {
   font-size: 14px;
   line-height: 1.71;
   /* or 171% */
-
   margin: 0;
 }
 
 .feature-list .feature-item {
-  padding-top: 25px;
-  padding-right: 100px;
-  padding-bottom: 25px;
-  padding-left: 100px;
-  background-color: var(--our-team-color);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 120px;
   margin-bottom: 30px;
   border-radius: 4px;
-  vertical-align: middle;
+
+  background-color: var(--our-team-color);
 }
 
 /* Секция Чем мы занимаемся? */
@@ -441,7 +440,6 @@ p {
   display: flex;
   justify-content: center;
   align-content: center;
-  margin-top: 10px;
 }
 
 .footer-social-link {
@@ -547,7 +545,11 @@ p {
   flex-wrap: wrap;
 }
 
-.project-links .item:hover {
+.project-links .link {
+  display: block;
+}
+.project-links .link:hover,
+.project-links .link:focus {
   box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06),
     1px 4px 6px rgba(0, 0, 0, 0.16);
 }
